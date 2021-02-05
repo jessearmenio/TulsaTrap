@@ -1,0 +1,669 @@
+﻿html {
+	width: 100%
+}
+
+/*General Body Styling*/
+body {
+	background-color: black;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	font-family: sans-serif, 'Roboto Condensed';
+}
+
+.brand {
+	text-align: left;
+	background-color: transparent;
+	position: absolute;
+}
+
+@media only screen and (max-width: 500px) {
+	.brand {
+		left: -10px;
+	}
+}
+
+
+
+#cart {
+	left: 93%;
+	position: absolute
+}
+
+/*cart*/
+#navpic1 {
+	height: 30px;
+	width: 30px;
+	padding-top: 65px;
+	filter: invert(1);
+	position: absolute;
+}
+
+#search {
+	left: 93%;
+	position: absolute
+}
+
+/*search*/
+#navpic2 {
+	height: 30px;
+	width: 30px;
+	padding-top: 20px;
+	filter: invert(1);
+	position: absolute;
+}
+
+@media only screen and (max-width: 500px) {
+	#navpic1, #navpic2 {
+		margin-right: 30px;
+	}
+}
+
+h1 {
+	color: white;
+	text-align: left;
+	top: 30%;
+	padding-top: 5px;
+	margin-left: 40px;
+	font-family: Karla, sans-serif;
+	font-size: 35px;
+	font-weight: 300;
+	font-stretch: condensed;
+}
+
+
+/*AboutNav at Top of Page*/
+#AboutNav {
+	display: inline-block;
+	left: 0;
+	padding: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: right;
+	position: absolute;
+	top: 0%;
+	height: 125px;
+	width: 100%;
+	list-style: none;
+	overflow: hidden;
+	background-color: black;
+	font-family: Calibri;
+	opacity: 1;
+}
+	/*About Nav Links Styling*/
+	#AboutNav a {
+		margin: 0 auto;
+		padding: 10px 10px;
+		display: block;
+		color: white;
+		text-align: right;
+		opacity: 1;
+		text-decoration: none;
+	}
+
+		/*AboutNav Links Hover Animation*/
+		#AboutNav a:hover {
+			opacity: 0.7;
+			color: darkgrey;
+			text-decoration: line-through;
+		}
+
+.nav-item {
+	position: absolute;
+	text-align: right;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 500px) {
+	#AboutNav {
+		width: 100%;
+	}
+}
+
+span {
+	top: 70px;
+	left: 45px;
+	font-size: 75px;
+	font-family: sans-serif;
+	opacity: 1;
+	position: absolute;
+	background-color: #AB2E5F;
+	margin-left: 0;
+	padding: 10px;
+	animation: span 10s infinite;
+}
+
+
+@media only screen and (max-width: 500px) {
+	span {
+		font-size: 20px;
+	}
+}
+
+.hometop {
+	height: 880px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	position: absolute;
+}
+
+#hometop {
+	margin-top: 100px;
+	position: absolute;
+	width: 100%;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+}
+
+#traphouse {
+	height: 100%;
+	width: 600px;
+	margin-top: 120px;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	display: inline-block;
+	overflow: visible;
+	border: none;
+	transition: 3s ease-in;
+	animation: Flicker 18s infinite;
+}
+
+
+@media only screen and (max-width: 500px) {
+	#traphouse {
+		padding-top: 20px;
+		height: 200px;
+		width: 175px;
+		margin-top: 100px;
+		transition: none;
+		animation-delay: 2s;
+		animation: FlickerMobile 30s infinite;
+	}
+}
+
+#homerow {
+	top: 780px;
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+	padding-top: 20px;
+	background-color: #f7f7f7;
+	position: absolute;
+	display: inline-block;
+	overflow: auto;
+}
+
+#white {
+	margin: 0 auto;
+	padding-left: 50px;
+	overflow: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+	#white {
+		height: 250px;
+		width: 300px;
+		left: 0;
+		padding-left: 0;
+	}
+}
+
+h2 {
+	height: 600px;
+	width: 100%;
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	top: 30%;
+}
+
+p {
+	padding-left: 10px;
+}
+
+.sale {
+	height: 300px;
+	width: 100%;
+	top: 1300px;
+	color: white;
+	text-align: center;
+	background-color: salmon;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 80px;
+	letter-spacing: 3px;
+	position: absolute;
+	overflow: auto;
+}
+
+@media only screen and (max-width: 500px) {
+	.sale {
+		font-size: 30px;
+		top: 475px;
+		height: 120px;
+	}
+}
+
+#homegraphic {
+	background-color: #f7f7f7;
+	padding-top: 15px;
+	padding-right: 20px;
+	position: absolute;
+	display: block;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 1280px) {
+	.sale {
+	}
+}
+
+#welcomemessage {
+	padding-top: 40px;
+	padding-right: 60px;
+	background-color: transparent;
+	margin-right: auto;
+	position: absolute;
+	display: block;
+	margin-left: 48%;
+	font-family: Karla, sans-serif;
+	font-size: 20px;
+	overflow: auto;
+}
+
+h3 {
+	color: salmon;
+	padding-bottom: -10px;
+	font-family: sans-serif;
+}
+
+h4 {
+	font-family: sans-serif;
+	text-align: left;
+	padding-left: 5px;
+	font-size: 20px;
+	color: salmon;
+	margin-bottom: 5px;
+}
+
+.fa {
+	padding: 0;
+	margin-left: -10px;
+}
+
+	.fa fa-facebook {
+		padding-bottom: -20px;
+	}
+
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-snapchat {
+	padding: 5px;
+	font-size: 30px;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	color: white;
+}
+
+	.fa-instagram:hover {
+		color: #C13584;
+	}
+
+	.fa-facebook:hover {
+		color: #4267B2;
+	}
+
+	.fa-twitter:hover {
+		color: #1DA1F2;
+	}
+
+	.fa-snapchat:hover {
+		color: #FFFC00
+	}
+
+.dev {
+	text-decoration: none;
+	text-decoration-style: none;
+	color: white;
+}
+
+	.dev:hover {
+		color: salmon;
+	}
+
+.footer {
+	top: 1610px;
+	display: inline-flex;
+	flex-flow: row wrap;
+	color: #2f2f2f;
+	background-color: black;
+	border-top: 1px solid #e5e5e5;
+	position: absolute;
+	width: 100%;
+}
+
+	.footer > * {
+		flex: 1 100%;
+	}
+
+.footer__addr {
+	margin-right: 1.25em;
+	margin-bottom: 2em;
+	padding-left: 40px;
+}
+
+.footer__logo {
+	font-family: 'Pacifico', cursive;
+	font-weight: 400;
+	text-transform: lowercase;
+	font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+	margin-top: 1.3em;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.nav__title {
+	font-weight: 400;
+	font-size: 20px;
+	text-decoration: none;
+	color: salmon;
+}
+
+.footer address {
+	font-style: normal;
+	color: #999;
+	padding-left: 10px;
+}
+
+.footer__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 36px;
+	width: 300px;
+	background-color: white;
+	border-radius: 100px;
+	color: black;
+	line-height: 0;
+	margin: 0.6em 0;
+	font-size: 1rem;
+	padding: 0 1.3em;
+}
+
+	.footer__btn:hover {
+		background-color: salmon;
+		color: white;
+	}
+
+.footer ul {
+	list-style: none;
+	padding: 0px;
+}
+
+.footer li {
+	line-height: 2em;
+}
+
+.footer a {
+	text-decoration: none;
+}
+
+.footer__nav {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+	.footer__nav > * {
+		flex: 1 50%;
+		margin-right: 4em;
+	}
+
+.nav__ul a {
+	color: white;
+}
+
+	.nav__ul a:hover {
+		color: salmon;
+	}
+
+.nav__item ul {
+	padding-top: 0px;
+}
+
+spanT {
+	font-family: Karla, sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	text-decoration-style: none;
+	color: white;
+	animation: copyrightflicker 10s infinite;
+}
+
+	spanT:hover {
+		color: salmon;
+	}
+
+.nav__ul--extra {
+	column-count: 1;
+	column-gap: .75em;
+}
+
+.legal {
+	padding-top: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	color: white;
+	width: 100%;
+	bottom: 0%;
+	padding-left: 10px;
+}
+
+.legal__links {
+	display: flex;
+	align-items: center;
+}
+
+.heart {
+	color: salmon;
+}
+
+@media screen and (min-width: 24.375em) {
+	.legal .legal__links {
+		margin-left: auto;
+	}
+}
+
+@media screen and (min-width: 40.375em) {
+	.footer__nav > * {
+		flex: 1;
+	}
+
+	.nav__item--extra {
+		flex-grow: 2;
+	}
+
+	.footer__addr {
+		flex: 1 0px;
+	}
+
+	.footer__nav {
+		flex: 2 0px;
+	}
+}
+
+@keyframes span {
+	0% {
+		background-color: salmon;
+		color: white;
+	}
+
+	25% {
+		background-color: #AB2E5F;
+		color: white;
+	}
+
+	50% {
+		background-color: salmon;
+		color: white;
+	}
+
+	75% {
+		background-color: #AB2E5F;
+		color: white;
+	}
+
+	100% {
+		background-color: salmon;
+		color: white;
+	}
+}
+
+@Keyframes Flicker {
+	0% {
+		filter: brightness(1) hue-rotate(0deg) drop-shadow(10px 10px 6px rgb(160, 0, 210));
+	}
+
+	10% {
+		filter: brightness(1) hue-rotate(0deg) drop-shadow(10px 10px 6px rgb(160, 0, 210));
+	}
+
+	20% {
+		filter: brightness(1.5) hue-rotate(53deg) drop-shadow(10px 40px 4px rgb(160, 0, 210));
+	}
+
+	30% {
+		filter: brightness(1) hue-rotate(0deg) drop-shadow(10px 30px 4mm rgb(160, 0, 210));
+	}
+
+	50% {
+		filter: brightness(1) hue-rotate(110deg) drop-shadow(10px 30px 4mm rgb(160, 0, 210));
+	}
+
+	60% {
+		filter: brightness(1.9) hue-rotate(0deg) drop-shadow(10px 30px 4px rgb(160, 0, 210));
+	}
+
+	75% {
+		filter: brightness(1) hue-rotate(160deg) drop-shadow(10px 30px 4mm rgb(160, 0, 210));
+	}
+
+	85% {
+		filter: brightness(1.5) hue-rotate(100deg) drop-shadow(10px 30px 4px rgb(160, 0, 210));
+	}
+
+	100% {
+		filter: brightness(1) hue-rotate(0deg) drop-shadow(10px 10px 6px rgb(160, 0, 210));
+	}
+}
+
+
+@Keyframes FlickerMobile {
+	0% {
+		filter: brightness(1) hue-rotate(0deg) drop-shadow(10px 10px 6px rgb(160, 0, 210));
+	}
+
+	10% {
+		filter: brightness(1) hue-rotate(0deg) drop-shadow(10px 10px 6px rgb(160, 0, 210));
+	}
+
+	20% {
+		filter: brightness(1.7) hue-rotate(53deg) drop-shadow(30px 30px 4px rgb(160, 0, 210));
+	}
+
+	50% {
+		filter: brightness(0.7) hue-rotate(110deg) drop-shadow(10px -6mm 4mm rgb(160, 0, 210));
+	}
+
+	75% {
+		filter: brightness(1.45) hue-rotate(160deg) drop-shadow(10px -8mm 4mm rgb(160, 0, 210));
+	}
+
+	85% {
+		filter: brightness(0.6) hue-rotate(100deg) drop-shadow(30px 30px 4px rgb(160, 0, 210));
+	}
+
+	100% {
+		filter: brightness(1) hue-rotate(0deg) drop-shadow(10px 10px 6px rgb(160, 0, 210));
+	}
+}
+
+@Keyframes Glow {
+	0% {
+		-moz-box-shadow: 0 0 0px #fff;
+		-webkit-box-shadow: 0 0 0px #fff;
+		box-shadow: 0px 0px 0px #fff;
+	}
+
+	25% {
+		-moz-box-shadow: 0 0 5px #fff;
+		-webkit-box-shadow: 0 0 5px #fff;
+		box-shadow: 0px 0px 5px #fff;
+	}
+
+	50% {
+		-moz-box-shadow: 0 0 0px #fff;
+		-webkit-box-shadow: 0 0 0px #fff;
+		box-shadow: 0px 0px 0px #fff;
+	}
+
+	75% {
+		-moz-box-shadow: 0 0 5px #fff;
+		-webkit-box-shadow: 0 0 5px #fff;
+		box-shadow: 0px 0px 5px #fff;
+	}
+
+	100% {
+		-moz-box-shadow: 0 0 0px #fff;
+		-webkit-box-shadow: 0 0 0px #fff;
+		box-shadow: 0px 0px 0px #fff;
+	}
+}
+
+@keyframes copyrightflicker {
+	0% {
+		color: white;
+		filter: brightness(0.7)
+	}
+
+	20% {
+		color: white;
+		filter: brightness(0.7)
+	}
+	25% {
+		color: salmon;
+		filter: brightness(1)
+	}
+	35% {
+		color: salmon;
+		filter: brightness(0.7)
+	}
+	45% {
+		color: salmon;
+		filter: brightness(1)
+	}
+	50% {
+		color: white;
+		filter: brightness(1)
+	}
+
+	75% {
+		color: salmon;
+		filter: brightness(0.7)
+	}
+
+	100% {
+		color: white;
+		filter: brightness(0.7)
+	}
+}
