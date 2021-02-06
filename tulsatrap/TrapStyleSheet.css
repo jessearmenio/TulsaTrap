@@ -192,13 +192,32 @@ span {
 	border: 3px white outset;
 }
 
-p{
+p {
 	padding-top: -30px;
 	color: white;
 	text-align: left;
 	font-family: Karla, sans-serif;
 	font-size: 20px;
 }
+
+#legalp{
+	font-size: 13px;
+}
+
+#homerow2 {
+	top: 780px;
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+	padding-top: 20px;
+	background-color: black;
+	position: absolute;
+	display: inline-flex;
+	overflow: hidden;
+	column-count: 4;
+	columns: 4;
+}
+
 
 #homerow {
 	top: 780px;
@@ -212,32 +231,55 @@ p{
 	overflow: auto;
 }
 
-#homerow2 {
-	top: 780px;
-	width: 100%;
-	height: 120%;
-	margin: 0 auto;
-	padding-top: 20px;
-	background-color: black;
+#homegraphic {
+	background-color: #f7f7f7;
+	padding-top: 15px;
 	position: absolute;
-	display: inline-flex;
-	overflow: hidden;
-	column-count: 4;
-	columns: 4;
+	display: block;
+	margin: auto;
 }
 
+/*White Trap Logo*/
 #white {
-	margin: 0 auto;
-	padding-left: 50px;
+	margin: auto;
+	padding-left: 10px;
 	overflow: auto;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1180px) {
+	#white {
+		padding-left: 0;
+		height: 350px;
+		width: 450px
+	}
+}
+
+@media only screen and (max-width: 800px) {
 	#white {
 		height: 250px;
 		width: 300px;
-		left: 0;
 		padding-left: 0;
+	}
+}
+
+
+#welcomemessage {
+	padding-top: 40px;
+	padding-right: 20px;
+	background-color: transparent;
+	margin-right: auto;
+	position: absolute;
+	display: block;
+	margin-left: 45%;
+	font-family: Karla, sans-serif;
+	font-size: 20px;
+	overflow: auto;
+}
+
+
+@media only screen and (max-width: 1180px) {
+	#welcomemessage {
+		padding-left: 10px;
 	}
 }
 
@@ -251,12 +293,20 @@ h2 {
 	top: 30%;
 }
 
+#misc{
+	font-family: Karla, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 60px;
+	border-radius: 4%;
+}
+
 #product p {
 	padding-left: 10px;
 	padding-bottom: 50px;
 }
 
-#bodyrow{
+#bodyrow {
 	margin: auto;
 }
 
@@ -284,31 +334,9 @@ h2 {
 	}
 }
 
-#homegraphic {
-	background-color: #f7f7f7;
-	padding-top: 15px;
-	padding-right: 20px;
-	position: absolute;
-	display: block;
-	margin: 0 auto;
-}
-
 @media only screen and (max-width: 1280px) {
 	.sale {
 	}
-}
-
-#welcomemessage {
-	padding-top: 40px;
-	padding-right: 60px;
-	background-color: transparent;
-	margin-right: auto;
-	position: absolute;
-	display: block;
-	margin-left: 48%;
-	font-family: Karla, sans-serif;
-	font-size: 20px;
-	overflow: auto;
 }
 
 h3 {
@@ -316,6 +344,7 @@ h3 {
 	padding-bottom: -10px;
 	font-family: sans-serif;
 	list-style-type: none;
+	padding-left: 10px;
 }
 
 h4 {
@@ -346,10 +375,10 @@ h5 {
 	}
 
 .fa-facebook, .fa-twitter, .fa-instagram, .fa-snapchat {
-	padding: 5px;
+	padding: 10px;
 	font-size: 30px;
-	width: 100px;
-	height: 100px;
+	width: 40px;
+	height: 40px;
 	text-align: center;
 	text-decoration: none;
 	display: block;
@@ -383,7 +412,7 @@ h5 {
 	}
 
 .footer {
-	top: 1610px;
+	top: 2300px;
 	display: inline-flex;
 	flex-flow: row wrap;
 	color: #2f2f2f;
@@ -393,20 +422,13 @@ h5 {
 	width: 100%;
 }
 
-.bodyfooter {
-	top: 2210px;
-	display: inline-flex;
-	flex-flow: row wrap;
-	color: #2f2f2f;
-	background-color: black;
-	border-top: 1px solid #e5e5e5;
-	position: absolute;
-	width: 100%;
+.footer > * {
+	flex: 1 100%;
 }
 
-	.footer > * {
-		flex: 1 100%;
-	}
+.footer > * {
+	flex: 1 100%;
+}
 
 .footer__addr {
 	margin-right: 1.25em;
@@ -441,9 +463,19 @@ h5 {
 	text-decoration: none;
 	list-style-type: none;
 	color: salmon;
+	padding-left: 0;
 }
 
-.footer address {
+.nav__title2 {
+	font-weight: 400;
+	font-size: 20px;
+	text-decoration: none;
+	list-style-type: none;
+	color: salmon;
+	padding-left: 10px;
+}
+
+	.footer address {
 	font-style: normal;
 	color: #999;
 	padding-left: 10px;
@@ -495,25 +527,15 @@ h5 {
 
 .nav__ul a {
 	color: white;
-
 }
 
 	.nav__ul a:hover {
 		color: salmon;
 	}
 
-.nav__item ul {
-	padding-top: 0px;
-	list-style-type: none;
-}
-
-.nav__item li {
-	list-style-type: none;
-}
-
 spanT {
 	font-family: Karla, sans-serif;
-	font-size: 20px;
+	font-size: 16px;
 	text-decoration: none;
 	text-decoration-style: none;
 	color: white;
@@ -527,20 +549,20 @@ spanT {
 .nav__ul--extra {
 	column-count: 1;
 	column-gap: .75em;
-	list-style-type: none;
-	padding-left: 0;
+	padding-left: 10px;
 }
 
 .nav__ul {
-	padding-left: 0;
+	padding-left: 10px;
 }
 
 .nav__item, .nav__item--extra {
 	list-style-type: none;
+	padding-left: 10px;
 }
 
 .legal {
-	padding-top: 25px;
+	margin-top: -20px;
 	display: flex;
 	flex-wrap: wrap;
 	color: white;
