@@ -195,15 +195,17 @@ span {
 
 /*merch page font styling*/
 p {
-	padding-top: -30px;
-	color: white;
+	padding-top: 10px;
+	color: black;
 	text-align: left;
 	font-family: Karla, sans-serif;
 	font-size: 20px;
 }
 
-/*Copyright footer font size*/
 #legalp {
+	color: white;
+	text-align: left;
+	font-family: Karla, sans-serif;
 	font-size: 13px;
 }
 
@@ -246,6 +248,24 @@ p {
 	height: 500px;
 	margin: 0 auto;
 	padding-top: 60px;
+	background-color: #f7f7f7;
+	position: absolute;
+	display: inline-block;
+	overflow: auto;
+}
+
+#misc2 {
+	font-family: Karla, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 4%;
+	top: 780px;
+	width: 100%;
+	height: 1400px;
+	margin: 0 auto;
+	padding-top: 60px;
+	padding-left: 10px;
+	padding-right: 10px;
 	background-color: #f7f7f7;
 	position: absolute;
 	display: inline-block;
@@ -373,6 +393,29 @@ h4 {
 	font-size: 20px;
 	color: salmon;
 	margin-bottom: 5px;
+}
+
+/*Privacy Policy Titles*/
+h5 {
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+/*Privacy Policy Headers*/
+h6 {
+	font-size: 25px;
+	font-family: Karla, sans-serif;
+}
+
+h7 {
+	color: black;
+	text-align: center;
+	padding-top: 5px;
+	font-family: Karla, sans-serif;
+	font-size: 35px;
+	font-weight: 300;
+	font-stretch: condensed;
+	text-decoration: underline;
 }
 
 /*All font awesome social media icon placement*/
@@ -538,6 +581,29 @@ h4 {
 		background-color: salmon;
 		color: white;
 	}
+
+.footer__btn2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 36px;
+	width: 200px;
+	background-color: salmon;
+	border-radius: 100px;
+	color: white;
+	line-height: 0;
+	margin: auto;
+	font-size: 1rem;
+	padding: 0 1.3em;
+}
+
+/*Footer "Email us!" Button Hover*/
+.footer__btn2:hover {
+	background-color: salmon;
+	color: black;
+	border: 2px solid black;
+	border-radius: 100px;
+}
 
 /*Home Page Footer ul*/
 .footer ul {
