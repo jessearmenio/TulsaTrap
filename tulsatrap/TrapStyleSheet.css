@@ -60,19 +60,6 @@ body {
 	}
 }
 
-/*"welcome to the trap" header styling*/
-h1 {
-	color: white;
-	text-align: left;
-	top: 30%;
-	padding-top: 5px;
-	margin-left: 40px;
-	font-family: Karla, sans-serif;
-	font-size: 35px;
-	font-weight: 300;
-	font-stretch: condensed;
-}
-
 /*AboutNav at Top of Page*/
 #AboutNav {
 	display: inline-block;
@@ -202,13 +189,6 @@ p {
 	font-size: 20px;
 }
 
-#legalp {
-	color: white;
-	text-align: left;
-	font-family: Karla, sans-serif;
-	font-size: 13px;
-}
-
 /*homepage body row*/
 #homerow {
 	top: 780px;
@@ -325,21 +305,11 @@ p {
 	}
 }
 
-/* "WELCOME TO THE TRAP" Placement and Sizing*/
-h2 {
-	height: 600px;
-	width: 100%;
-	color: white;
-	text-align: center;
-	margin: 0 auto;
-	padding: 0;
-	top: 30%;
-}
-
 /*Merch Page "Bio" for Product Styling */
-#product p {
+#product {
 	padding-left: 10px;
 	padding-bottom: 50px;
+	color: white;
 }
 
 #bodyrow {
@@ -376,6 +346,30 @@ h2 {
 	}
 }
 
+/*"welcome to the trap" header styling*/
+h1 {
+	color: white;
+	text-align: left;
+	top: 30%;
+	padding-top: 5px;
+	margin-left: 40px;
+	font-family: Karla, sans-serif;
+	font-size: 35px;
+	font-weight: 300;
+	font-stretch: condensed;
+}
+
+/* "WELCOME TO THE TRAP" Placement and Sizing*/
+h2 {
+	height: 600px;
+	width: 100%;
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	top: 30%;
+}
+
 /*Footer link Headers ( Socials, Archived Designs, Legal )*/
 h3 {
 	color: salmon;
@@ -395,10 +389,10 @@ h4 {
 	margin-bottom: 5px;
 }
 
-/*Privacy Policy Titles*/
+/*Merch Product title*/
 h5 {
+	color: salmon;
 	font-size: 20px;
-	font-family: sans-serif;
 }
 
 /*Privacy Policy Headers*/
@@ -407,6 +401,7 @@ h6 {
 	font-family: Karla, sans-serif;
 }
 
+/*Privacy Policy section Headers*/
 h7 {
 	color: black;
 	text-align: center;
@@ -417,6 +412,13 @@ h7 {
 	font-stretch: condensed;
 	text-decoration: underline;
 }
+
+/*Privacy Policy Titles*/
+h8 {
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
 
 /*All font awesome social media icon placement*/
 .fa {
@@ -700,6 +702,14 @@ spanT {
 	align-items: center;
 }
 
+/*Footer Copyright Legal Body Styling*/
+#legalp {
+	color: white;
+	text-align: left;
+	font-family: Karla, sans-serif;
+	font-size: 13px;
+}
+
 /*"Made by" Heart coloring*/
 .heart {
 	color: salmon;
@@ -735,7 +745,12 @@ address, a {
 		flex: 2 0px;
 	}
 }
-
+/**/
+/*
+/*ANIMATIONS BELOW*/
+/*
+/*
+/**/
 @keyframes span {
 	0% {
 		background-color: salmon;
