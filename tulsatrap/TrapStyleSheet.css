@@ -17,16 +17,16 @@ body {
 	position: absolute;
 }
 
-@media only screen and (max-width: 500px) {
-	.brand {
-		left: -10px;
-	}
-}
-
 /*top nav shopping cart positioning*/
 #cart {
 	left: 93%;
 	position: absolute
+}
+
+@media only screen and (max-width: 400px) {
+	#cart {
+		left: 80%;
+	}
 }
 
 /*shopping cart sizing*/
@@ -42,6 +42,12 @@ body {
 #search {
 	left: 93%;
 	position: absolute
+}
+
+@media only screen and (max-width: 400px) {
+	#search {
+		left: 80%;
+	}
 }
 
 /*search icon sizing*/
@@ -78,31 +84,30 @@ body {
 	font-family: Calibri;
 	opacity: 1;
 }
-	/*About Nav Links Styling*/
-	#AboutNav a {
-		margin: 0 auto;
-		padding: 10px 10px;
-		display: block;
-		color: white;
-		text-align: right;
-		opacity: 1;
-		text-decoration: none;
-	}
 
-		/*AboutNav Links Hover Animation*/
-		#AboutNav a:hover {
-			opacity: 0.7;
-			color: darkgrey;
-			text-decoration: line-through;
-		}
-
-/*Adjust nav on mobile*/
 @media only screen and (max-width: 500px) {
-	#AboutNav a {
+	#AboutNav {
 		width: 100%;
-		padding: 0;
+		display: inline-flex;
 	}
 }
+/*About Nav Links Styling*/
+#AboutNav a {
+	margin: 0 auto;
+	padding: 10px 10px;
+	display: block;
+	color: white;
+	text-align: right;
+	opacity: 1;
+	text-decoration: none;
+}
+
+	/*AboutNav Links Hover Animation*/
+	#AboutNav a:hover {
+		opacity: 0.7;
+		color: darkgrey;
+		text-decoration: line-through;
+	}
 
 /* "WELCOME TO THE TRAP" Background Styling and Animation*/
 span {
@@ -163,8 +168,8 @@ span {
 @media only screen and (max-width: 500px) {
 	#traphouse {
 		padding-top: 20px;
-		height: 200px;
-		width: 175px;
+		height: 175px;
+		width: 155px;
 		margin-top: 100px;
 		transition: none;
 		animation-delay: 2s;
@@ -180,6 +185,13 @@ span {
 	border: 3px white outset;
 }
 
+@media only screen and (max-width: 400px) {
+	#trapmerch {
+		width: 100px;
+		height: 100px
+	}
+}
+
 /*merch page font styling*/
 p {
 	padding-top: 10px;
@@ -187,6 +199,20 @@ p {
 	text-align: left;
 	font-family: Karla, sans-serif;
 	font-size: 20px;
+}
+
+#bodyrow {
+	margin: auto;
+	width: 100%;
+	padding: 10px;
+}
+
+@media only screen and (max-width: 400px)
+{
+	#bodyrow{
+		padding-left: 5px;
+		padding-right: 0px;
+	}
 }
 
 /*homepage body row*/
@@ -202,7 +228,14 @@ p {
 	overflow: auto;
 }
 
-/*merchpage body row*/
+@media only screen and (max-width: 400px) {
+	#homerow {
+		top: 375px;
+		height: 950px;
+	}
+}
+
+/*merch-page body row*/
 #homerow2 {
 	top: 780px;
 	width: 100%;
@@ -215,6 +248,13 @@ p {
 	overflow: hidden;
 	column-count: 4;
 	columns: 4;
+}
+
+@media only screen and (max-width: 400px) {
+	#homerow2 {
+		top: -175px;
+		height: 2050px;
+	}
 }
 
 /*Story, Privacy, Terms body Styling*/
@@ -252,6 +292,16 @@ p {
 	overflow: auto;
 }
 
+@media only screen and (max-widt: 400px)
+{
+	#misc2{
+		display: inline-flex;
+		padding-left: 0px;
+		padding-right: 0px;
+		font-size: 10px;
+	}
+}
+
 /*Home Page White Body Trap Logo Background*/
 #homegraphic {
 	background-color: #f7f7f7;
@@ -276,11 +326,11 @@ p {
 	}
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 400px) {
 	#white {
-		height: 250px;
-		width: 300px;
-		padding-left: 5%;
+		height: 300px;
+		width: 100%;
+		padding-left: 0%;
 	}
 }
 
@@ -298,6 +348,12 @@ p {
 	overflow: auto;
 }
 
+@media only screen and (max-width: 400px) {
+	#welcomemessage {
+		top: 275px;
+		margin: 0 auto;
+	}
+}
 
 @media only screen and (max-width: 1180px) {
 	#welcomemessage {
@@ -310,10 +366,6 @@ p {
 	padding-left: 10px;
 	padding-bottom: 50px;
 	color: white;
-}
-
-#bodyrow {
-	margin: auto;
 }
 
 /*Home Page Sale Banner Styling*/
@@ -333,18 +385,32 @@ p {
 	overflow: auto;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
 	.sale {
 		font-size: 30px;
-		top: 475px;
+		top: 500px;
 		height: 120px;
+		display: block;
 	}
 }
 
-@media only screen and (max-width: 1280px) {
-	.sale {
-	}
+/*
+#carousel {
+	top: 1300px;
+	height: 600px;
+	position: absolute;
+	display: inline-block;
+	margin: 0 auto;
 }
+
+.carousel-inner {
+	height: 600px;
+	top: 1300px;
+	position: absolute;
+	display: inline-block;
+	margin: 0 auto;
+}
+*/
 
 /*"welcome to the trap" header styling*/
 h1 {
@@ -393,6 +459,7 @@ h4 {
 h5 {
 	color: salmon;
 	font-size: 20px;
+	font-family: Karla, sans-serif;
 }
 
 /*Privacy Policy Headers*/
@@ -484,6 +551,12 @@ h8 {
 	.footer > * {
 		flex: 1 100%;
 	}
+
+@media only screen and (max-width: 400px) {
+	.footer {
+		top: 1325px;
+	}
+}
 
 /*Body / Legal page footer styling*/
 .footer2 {
@@ -599,13 +672,13 @@ h8 {
 	padding: 0 1.3em;
 }
 
-/*Footer "Email us!" Button Hover*/
-.footer__btn2:hover {
-	background-color: salmon;
-	color: black;
-	border: 2px solid black;
-	border-radius: 100px;
-}
+	/*Footer "Email us!" Button Hover*/
+	.footer__btn2:hover {
+		background-color: salmon;
+		color: black;
+		border: 2px solid black;
+		border-radius: 100px;
+	}
 
 /*Home Page Footer ul*/
 .footer ul {
@@ -645,10 +718,17 @@ h8 {
 	flex-flow: row wrap;
 }
 
-	.footer__nav > * {
-		flex: 1 50%;
-		margin-right: 4em;
+@media only screen and (max-width: 400px) {
+	.footer__nav {
+		padding-top: -10px;
 	}
+}
+
+
+.footer__nav > * {
+	flex: 1 50%;
+	margin-right: 4em;
+}
 
 .nav__ul a {
 	color: white;
@@ -918,5 +998,190 @@ address, a {
 	100% {
 		color: white;
 		filter: brightness(0.7)
+	}
+}
+
+
+@font-face {
+	font-family: Clip;
+	src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+.sign {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: radial-gradient( ellipse 50% 35% at 50% 50%, #6b1839, transparent );
+	letter-spacing: 2;
+	font-family: "Clip";
+	text-transform: uppercase;
+	height: 10px;
+	font-size: 10px;
+	color: #ffe6ff;
+	text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+	animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+	0%, 22%, 36%, 75% {
+		color: #ffe6ff;
+		text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+	}
+
+	28%, 33% {
+		color: #ff65bd;
+		text-shadow: none;
+	}
+
+	82%, 97% {
+		color: #ff2483;
+		text-shadow: none;
+	}
+}
+
+.flicker {
+	animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+	animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+	0% {
+		color: #6b1839;
+		text-shadow: none;
+	}
+
+	100% {
+		color: #ffe6ff;
+		text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+	}
+}
+
+@keyframes flicker {
+	from {
+		opacity: 1;
+	}
+
+	4% {
+		opacity: 0.9;
+	}
+
+	6% {
+		opacity: 0.85;
+	}
+
+	8% {
+		opacity: 0.95;
+	}
+
+	10% {
+		opacity: 0.9;
+	}
+
+	11% {
+		opacity: 0.922;
+	}
+
+	12% {
+		opacity: 0.9;
+	}
+
+	14% {
+		opacity: 0.95;
+	}
+
+	16% {
+		opacity: 0.98;
+	}
+
+	17% {
+		opacity: 0.9;
+	}
+
+	19% {
+		opacity: 0.93;
+	}
+
+	20% {
+		opacity: 0.99;
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	26% {
+		opacity: 0.94;
+	}
+
+	28% {
+		opacity: 0.98;
+	}
+
+	37% {
+		opacity: 0.93;
+	}
+
+	38% {
+		opacity: 0.5;
+	}
+
+	39% {
+		opacity: 0.96;
+	}
+
+	42% {
+		opacity: 1;
+	}
+
+	44% {
+		opacity: 0.97;
+	}
+
+	46% {
+		opacity: 0.94;
+	}
+
+	56% {
+		opacity: 0.9;
+	}
+
+	58% {
+		opacity: 0.9;
+	}
+
+	60% {
+		opacity: 0.99;
+	}
+
+	68% {
+		opacity: 1;
+	}
+
+	70% {
+		opacity: 0.9;
+	}
+
+	72% {
+		opacity: 0.95;
+	}
+
+	93% {
+		opacity: 0.93;
+	}
+
+	95% {
+		opacity: 0.95;
+	}
+
+	97% {
+		opacity: 0.93;
+	}
+
+	to {
+		opacity: 1;
 	}
 }
