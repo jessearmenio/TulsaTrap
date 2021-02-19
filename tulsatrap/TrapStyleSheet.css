@@ -11,12 +11,6 @@ body {
 	font-family: sans-serif, 'Roboto Condensed';
 }
 
-.brand {
-	text-align: left;
-	background-color: transparent;
-	position: absolute;
-}
-
 /*top nav shopping cart positioning*/
 #cart {
 	left: 93%;
@@ -109,6 +103,12 @@ body {
 		text-decoration: line-through;
 	}
 
+.brand {
+	text-align: left;
+	background-color: transparent;
+	position: absolute;
+}
+
 /* "WELCOME TO THE TRAP" Background Styling and Animation*/
 span {
 	top: 70px;
@@ -141,7 +141,7 @@ span {
 	position: absolute;
 }
 
-/*header lower spacing*/
+/*header spacing*/
 #hometop {
 	margin-top: 100px;
 	position: absolute;
@@ -204,7 +204,7 @@ p {
 #bodyrow {
 	margin: auto;
 	width: 100%;
-	padding: 10px;
+	padding: 30px;
 }
 
 @media only screen and (max-width: 400px)
@@ -250,6 +250,12 @@ p {
 	columns: 4;
 }
 
+@media only screen and (max-width: 1600px) {
+	#homerow2 {
+		top: 700px;
+	}
+}
+
 @media only screen and (max-width: 400px) {
 	#homerow2 {
 		top: -175px;
@@ -278,10 +284,9 @@ p {
 	font-family: Karla, sans-serif;
 	font-size: 20px;
 	text-align: center;
-	border-radius: 4%;
 	top: 780px;
 	width: 100%;
-	height: 1400px;
+	height: 2000px;
 	margin: 0 auto;
 	padding-top: 60px;
 	padding-left: 10px;
@@ -295,11 +300,13 @@ p {
 @media only screen and (max-widt: 400px)
 {
 	#misc2{
-		display: inline-flex;
-		padding-left: 0px;
-		padding-right: 0px;
+		display: block;
 		font-size: 10px;
-	}
+		width: 100%;
+		margin: 0 auto;
+		height: 2500px;
+		padding: 0;
+		}
 }
 
 /*Home Page White Body Trap Logo Background*/
@@ -315,14 +322,22 @@ p {
 	text-align: center;
 	overflow: hidden;
 	margin: auto;
-	padding-left: 10%;
+	padding-left: 5%;
 }
 
 @media only screen and (max-width: 1180px) {
 	#white {
-		padding-left: 10%;
+		padding-left: 5%;
 		height: 350px;
 		width: 450px
+	}
+}
+
+@media only screen and (max-width: 1000px){
+	#white{
+		padding-left: 3%;
+		height: 300px;
+		width: 400px;
 	}
 }
 
@@ -393,24 +408,6 @@ p {
 		display: block;
 	}
 }
-
-/*
-#carousel {
-	top: 1300px;
-	height: 600px;
-	position: absolute;
-	display: inline-block;
-	margin: 0 auto;
-}
-
-.carousel-inner {
-	height: 600px;
-	top: 1300px;
-	position: absolute;
-	display: inline-block;
-	margin: 0 auto;
-}
-*/
 
 /*"welcome to the trap" header styling*/
 h1 {
@@ -486,6 +483,24 @@ h8 {
 	font-family: sans-serif;
 }
 
+/*
+#carousel {
+	top: 1300px;
+	height: 600px;
+	position: absolute;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.carousel-inner {
+	height: 600px;
+	top: 1300px;
+	position: absolute;
+	display: inline-block;
+	margin: 0 auto;
+}
+*/
+
 
 /*All font awesome social media icon placement*/
 .fa {
@@ -538,7 +553,7 @@ h8 {
 
 /* Home page and Gallery/Merch footer styling*/
 .footer {
-	top: 2300px;
+	top: 1625px;
 	display: inline-flex;
 	flex-flow: row wrap;
 	color: #2f2f2f;
@@ -552,15 +567,9 @@ h8 {
 		flex: 1 100%;
 	}
 
-@media only screen and (max-width: 400px) {
-	.footer {
-		top: 1325px;
-	}
-}
-
 /*Body / Legal page footer styling*/
 .footer2 {
-	top: 1600px;
+	top: 2400px;
 	display: inline-flex;
 	flex-flow: row wrap;
 	color: #2f2f2f;
@@ -573,6 +582,22 @@ h8 {
 	.footer2 > * {
 		flex: 1 100%;
 	}
+
+
+.footer3 {
+	top: 2840px;
+	display: inline-flex;
+	flex-flow: row wrap;
+	color: #2f2f2f;
+	background-color: black;
+	border-top: 1px solid #e5e5e5;
+	position: absolute;
+	width: 100%;
+}
+
+.footer3 > * {
+	flex: 1 100%;
+}
 
 .footer__addr {
 	margin-right: 1.25em;
@@ -601,6 +626,13 @@ h8 {
 	font-weight: 400;
 }
 
+/*Body Footer Address Header 3*/
+.footer3__addr h2 {
+	margin-top: 1.3em;
+	font-size: 15px;
+	font-weight: 400;
+}
+
 /*Home Page Footer Nav Title*/
 .nav__title {
 	font-weight: 400;
@@ -619,6 +651,13 @@ h8 {
 	list-style-type: none;
 	color: salmon;
 	padding-left: 10px;
+}
+
+@media only screen and (max-width: 400px)
+	{
+	.nav__title2{
+		padding-left: 0px;
+	}
 }
 
 .nav-item {
@@ -702,12 +741,25 @@ h8 {
 	padding: 0px;
 }
 
+.footer3 ul {
+	list-style: none;
+	padding: 0px;
+}
+
 /*Body Page Footer li (links)*/
 .footer2 li {
 	line-height: 2em;
 }
 
+.footer3 li {
+	line-height: 2em;
+}
+
 /*Body Page Footer a (link brackets)*/
+.footer2 a {
+	text-decoration: none;
+}
+
 .footer2 a {
 	text-decoration: none;
 }
